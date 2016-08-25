@@ -11,8 +11,8 @@ after_success:
 branches:
   only:
     - master
-    - /^jetty-jersey-[0-9]+\.[0-9]+\.[0-9]+/
-
+    - /^tag-.*$/
+    - /^release-.*$/
 env:
   global:
   - secure: euw2myiDf9AdMoCNBBrL/xAB3NUu71ks2qQQ6aQSm9nTSoRqLbEfcM6KNMCBxGeWzi/9BQ5/gHrASwoQW3EI+28gRE7knzV11Z3aWt/nViRKpZILblIW9wXdQztQMzAYI46k6zK3lt924TuYGNBnzNd/1F0VlZ7nUZWpCVpxgdguskQLIVKN/LMRy5h6dTfwYAsLNN4wPAwPZwu7aUr1jI4/td3uGTDbEJKzrHkZPbSrB+uI7G8ZbN2+9CwknrnwwUiEVNhdE8YJAjKFDVuPKBioQ3NfAZ79c6joRwvhaxGFWYLE65/8T24A7LFCDMe8DKi/jStygOlcp+wtEZ4GgJBObvGDPwChXaZIQ2EvtBwU22xKOXEjn0YiRLASA/taHX+ORKrLXvjzrjXtCphSP2GJ56trBu8taK36P/mbVfl3SvgGJQ8qhW0r7QrPwgsUw+7F/d+MQVJQP4d/Lxby/EPcuvhKHNFeHL/eomXZ7V9xXTcphUWXRFChg/rk5Aq2+bSI2pWUSxsQ+uwhbhB7xKXkgYbyQwGi12TgSyqSrDNr/4hnuPrBQXf3sygnr1poUZSvb8TeWEzvBjlxGi09E9AvRTBptDFUxKDDXt0HG6elGl+fjXM52AdUnrvVr3i3BX9aWt2lS75PpTjvB3MzU69XN5QiFlyZM5ZXINB6+ig=
