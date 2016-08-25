@@ -43,7 +43,7 @@
         <repository>
             <id>bintray</id>
             <name>erankeren/jetty-jersey</name>
-            <url>https://api.bintray.com/maven/erankeren/mvn-repo/jetty-jersey</url>
+            <url>https://api.bintray.com/maven/erankeren/mvn-repo/jetty-jersey/;publish=1</url>
         </repository>
     </distributionManagement>
 
