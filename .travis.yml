@@ -4,7 +4,7 @@ jdk:
 - openjdk7
 
 after_success:
-  - .travis_after_success.sh
+  - travis_after_success.sh
 
 branches:
   only:
