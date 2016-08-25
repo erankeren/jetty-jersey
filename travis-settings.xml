@@ -1,7 +1,7 @@
 <servers>
     <server>
         <id>bintray</id>
-        <username>${env.b93paTc+8zPKLiA16gSgcwuh0vxzFp3BVuYnut9tC/B4ZACmOp9xyuAHPMoabrkoYR1D01xCeeQsGlGs7Fi0lR1rkOqc6GTTNTNLB1zH4swtRN3noDmYbEl28LnuS+iCSqCR5Ou/7EAbbgMHprz4r95vtY0rWtjQyGii2hvqcEh0g4fvmThhZgLQpzuEFRFGlTtygL2/0BA/txlQ3aTJy1KphYy/xHVTgIw87aD6lPMhumUnL7vA7aIi85M5h7dDFbsQOb/mYKnUTbEhoXqatSq8ENeun3ebgafb4iwZvQfRVKp1T6omME+wthFQveQVoaPobJarcXT80BxMZaTahyJhZw1nKTzjssjwptrU2k54BP4nzrZBQXBQ33+cDHR61D7bHaXJk2YCgieIl1jFq353F6YbA1u/6Oittms1CQy84Xf45QVZGfMc0x1zdcPWd8Lm6F+PKDXBzk4W7kkKdRAHINKPex/AG93WyaxVENLc2tfx6sPBxXiqxaKnDgl5w+JCNpksdkiErMeWpPFj5LlPhxsp5ItGKD7i0NuSv7+lmwcHnkqTlOiCqqow6a43k6bXrfcuwnRvqqE9vsbadfBfYD9FGK3Q0yVVvwHJ4oNeQCxMUjn6gIQpTK9B7fqCZCUXYebyRojBlmP1Q1aDg6d39Mu1EZk24/zIOyRn1pw=}</username>
-        <password>${env.LOXivzVXH71VttVIMUO8JEcsBFlz3hhh+jysoWok7Zqe//p1qCBILQb0aF/qWllDSwDq/D5BvHn5KWxWRZ9Gkr9hJ7O7wT+K0KsCK2a+LVWHSvG35E8AhJnO0v2DHQVfPA1Piew47KNuHR1aWWmfITiJG3MCH1so/dSGqtqP5tj/uTSlFv6b0EYQRqNeCsKyCT92QBK1E5bl455SLlufYVTKWFLYlK3QRpzQBtBHUHyrC5SqYs+PP+B+BN3h7yEt7CdvBTQ0DH6GWn2xpcr4Pk5mZSqx/UFQKb+NXl9ux1WfOjc2hGRhOOr+2yKEq6gu8K3Vw5bS9aviJ7VVUXK6ZI0RuJRFW4ykp5shv84JpJOwfq+7SUikGqCV8vruFCpiAGqV5Q9UKBtH6jKLFEbtH/v5bej2XLh/JygBxPrZdybulcacawMklRPpdq0BJiuNE6fZjtWKTMhd1DfW70bTrNecDfkNHRqMy6Zl7BV3zN3TvqXI3ZYSUsM2k5wnVMoyTKTnrPRHRzZceKm1XJuOQfH0zz+Ei1Wqb25Gh48JW7kvBOxX6TMC1w6AI8cpo9TuSWhyhdtcSYdzhpMmc44iZKr3U2MdIJfimkeXWpeJHlM75Gk5ii+jaH4RW80SNhbKJ2Z8FsOqSB8ZuTtdRn/d8TJh/uavXnt+ifd/TypppIU=}</password>
+        <username>${env.BINTRAY_USER}</username>
+        <password>${env.BINTRAY_API_KEY}</password>
     </server>
 </servers>
