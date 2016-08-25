@@ -53,6 +53,16 @@
   </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>.</directory>
+                <targetPath>${basedir}/target/</targetPath>
+                <includes>
+                    <include>pom.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
         <plugins>
 
             <plugin>
