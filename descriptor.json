@@ -12,7 +12,7 @@
     "files":
         [
           {
-            "includePattern": "target/(*.jar)",
+            "includePattern": "target/(.*)",
             "excludePattern": "target/.*.zip$", 
             "uploadPattern": "/$1"
           }
