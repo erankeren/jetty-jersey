@@ -11,30 +11,34 @@ public class JettyJersey {
 
     private Server jetty;
 
-    private final ResourceConfig resourceConfig = new MyResourceConfig();
+    private ResourceConfig resourceConfig;
+
+    URI baseUri;
 
     public JettyJersey(Integer port) {
 
-        URI baseUri = UriBuilder
+        baseUri = UriBuilder
                 .fromUri("http://localhost/")
                 .port(port)
                 .build();
 
-        jetty = JettyHttpContainerFactory.createServer(baseUri, resourceConfig);
+        resourceConfig = new MyResourceConfig();
+    }
+
+    public ResourceConfig getResourceConfig() {
+        return resourceConfig;
     }
 
     public void start() throws Exception {
-
         doStart(false);
     }
 
     public void startAndJoin() throws Exception {
-
         doStart(true);
     }
 
     private void doStart(boolean join) throws Exception {
-
+        jetty = JettyHttpContainerFactory.createServer(baseUri, resourceConfig);
         jetty.start();
         if (join) {
             jetty.join();
@@ -46,6 +50,4 @@ public class JettyJersey {
 
         jetty.stop();
     }
-
-
 }
