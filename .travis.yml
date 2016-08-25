@@ -3,6 +3,10 @@ jdk:
 - oraclejdk7
 - openjdk7
 
+after_success:
+  - mvn clean cobertura:cobertura coveralls:report javadoc:jar
+  - test "${TRAVIS_PULL_REQUEST}" == "false" && test “${TRAVIS_JDK_VERSION}” == “oraclejdk7″ && test "${TRAVIS_TAG}" != "" && mvn deploy --settings travis/travis-settings.xml
+
 env:
   global:
   - secure: b93paTc+8zPKLiA16gSgcwuh0vxzFp3BVuYnut9tC/B4ZACmOp9xyuAHPMoabrkoYR1D01xCeeQsGlGs7Fi0lR1rkOqc6GTTNTNLB1zH4swtRN3noDmYbEl28LnuS+iCSqCR5Ou/7EAbbgMHprz4r95vtY0rWtjQyGii2hvqcEh0g4fvmThhZgLQpzuEFRFGlTtygL2/0BA/txlQ3aTJy1KphYy/xHVTgIw87aD6lPMhumUnL7vA7aIi85M5h7dDFbsQOb/mYKnUTbEhoXqatSq8ENeun3ebgafb4iwZvQfRVKp1T6omME+wthFQveQVoaPobJarcXT80BxMZaTahyJhZw1nKTzjssjwptrU2k54BP4nzrZBQXBQ33+cDHR61D7bHaXJk2YCgieIl1jFq353F6YbA1u/6Oittms1CQy84Xf45QVZGfMc0x1zdcPWd8Lm6F+PKDXBzk4W7kkKdRAHINKPex/AG93WyaxVENLc2tfx6sPBxXiqxaKnDgl5w+JCNpksdkiErMeWpPFj5LlPhxsp5ItGKD7i0NuSv7+lmwcHnkqTlOiCqqow6a43k6bXrfcuwnRvqqE9vsbadfBfYD9FGK3Q0yVVvwHJ4oNeQCxMUjn6gIQpTK9B7fqCZCUXYebyRojBlmP1Q1aDg6d39Mu1EZk24/zIOyRn1pw=
