@@ -18,3 +18,5 @@ jetty-jersey.iml
 target/
 
 release.properties
+
+pom.xml.releaseBackup
