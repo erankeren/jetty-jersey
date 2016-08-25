@@ -1,10 +1,10 @@
 language: java
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 script: mvn install
 deploy:
   provider: bintray
-  file: "descriptor.json"
-  user: "erankeren"
-  key:  "XXXXXXXX"
+  file: descriptor.json
+  user: erankeren
+  key:
+    secure: S0Dcqs2FSbWRztD5sp7HuYsuRQWmafFfP3wDfNof70iqd0l2T0UuHGgK1bDitIgKlqIgbx7WmaKkty9Vpn4P4GVCC5N0EDTyxzFyRSZVUGCkgI9jww1N33/UNSx3PvEO0JZgh6z22ZIFNTAnhOchKYset/7v0qkj552jZkuCczA4KVBmPtvsLEqrZXVPuVxBYqDtYn5a11ViBz1FSRNCrJgu+nyhHJ7nwEW+JNW6vzxx02Uzv8Gu6q7QirHeANXQroV5veYzRBTAqD/YIzYK5bbGp4amM0w2J7HAzs9iZLgNjSUU29isLvLm7AB56KGpTkSAo4Al67cisM4Oh+KjFuq/ZY5pkZCaW6W1NpbL4AWpIhryuNGKdwpdx93oPJRr7RC38mnc+FeUrIatHpa+emfgBO8q+HA5UxONcobQwgFU0MFWtbIG3qkaD8NGkTPpeeYn4o5nJ6wO6gZLRLxDowBT3aRgRJ730Nxfvj+xiFXLsAARriGL2NRmz37GVqmUQtmdSmu3omlkXiOYLtFhjRcidtbvCNO9la29QkZaVJoWgYyp5pndjSJNdh4LZNEMIgk38YtPyeC46+yDgNXHs62gqtBG7npEgtf9CW//K1fPMcUv2CvpuWCo10oUfOZBRmTK9PW1wmVochaOpiBnJNGXhXSUQsMbEB91kqdSHQs=
