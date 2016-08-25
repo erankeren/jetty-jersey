@@ -1,12 +1,12 @@
 {
     "package": {
-        "name": "jetty-jersey", // Bintray package name
-        "repo": "mvn-repo", // Bintray repository name
-        "subject": "erankeren", // Bintray subject (user or organization)
+        "name": "jetty-jersey",
+        "repo": "mvn-repo",
+        "subject": "erankeren"
     },
 
     "version": {
-        "name": "1.0.0",
+        "name": "1.0.0"
     },
 
     "files":
