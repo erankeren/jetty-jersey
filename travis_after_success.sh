@@ -17,7 +17,7 @@ if [ "${TRAVIS_JDK_VERSION}" == "oraclejdk7" ]; then
             exit 1
         fi
         if [ "${SITE_VERSION##*-}" != "SNAPSHOT" ]; then
-            mvn clean deploy --settings travis/travis-settings.xml
+            mvn clean deploy --settings ./travis-settings.xml
         fi
     else
         echo "Not deploying artifacts. This is only done with non-pull-request commits to master branch with Oracle Java 7 builds."
