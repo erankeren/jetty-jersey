@@ -13,8 +13,10 @@
         [
           {
             "includePattern": "target/(.*.jar)",
+            "uploadPattern": "/$1"
+          },
+          {
             "includePattern": "target/(pom.*.xml)",
-            "excludePattern": "target/.*.zip$",
             "uploadPattern": "/$1"
           }
         ],
