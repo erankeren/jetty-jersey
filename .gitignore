@@ -14,3 +14,7 @@ hs_err_pid*
 jetty-jersey.iml
 
 .idea/
+
+target/
+
+release.properties
