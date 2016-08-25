@@ -1,5 +1,6 @@
 package com.github.erankeren;
 
+import org.apache.http.util.Args;
 import org.eclipse.jetty.server.Server;
 import org.glassfish.jersey.jetty.JettyHttpContainerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -16,6 +17,7 @@ public class JettyJersey {
     URI baseUri;
 
     public JettyJersey(Integer port) {
+        Args.notNegative(port, "port");
 
         baseUri = UriBuilder
                 .fromUri("http://localhost/")
