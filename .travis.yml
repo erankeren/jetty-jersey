@@ -4,12 +4,14 @@ jdk:
 - openjdk7
 
 after_success:
-  - mvn clean javadoc:jar
+#  - mvn clean javadoc:jar
   - test "${TRAVIS_PULL_REQUEST}" == "false" && test “${TRAVIS_JDK_VERSION}” == “oraclejdk7″ && test "${TRAVIS_TAG}" != "" && mvn deploy --settings travis/travis-settings.xml
 
 branches:
   only:
     - master
+    - /^jetty-jersey-[0-9]+\.[0-9]+\.[0-9]+/
+
 
 env:
   global:
