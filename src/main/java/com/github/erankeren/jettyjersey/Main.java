@@ -1,10 +1,9 @@
-package com.github.erankeren;
+package com.github.erankeren.jettyjersey;
 
-import com.github.erankeren.jettyjersey.JettyJersey;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 
 /**
- * Hello world!
+ * An example how to use the jetty jersey class
  *
  */
 public class Main
