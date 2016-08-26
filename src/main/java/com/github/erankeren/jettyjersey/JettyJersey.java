@@ -1,4 +1,4 @@
-package com.github.erankeren;
+package com.github.erankeren.jettyjersey;
 
 import org.apache.http.util.Args;
 import org.eclipse.jetty.server.Server;

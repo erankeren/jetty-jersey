@@ -1,4 +1,4 @@
-package com.github.erankeren;
+package com.github.erankeren.jettyjersey;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

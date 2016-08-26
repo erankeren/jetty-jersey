@@ -1,5 +1,6 @@
 package com.github.erankeren;
 
+import com.github.erankeren.jettyjersey.JettyJersey;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 
 /**

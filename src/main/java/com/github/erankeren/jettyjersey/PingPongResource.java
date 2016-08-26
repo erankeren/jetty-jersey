@@ -1,4 +1,4 @@
-package com.github.erankeren;
+package com.github.erankeren.jettyjersey;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
