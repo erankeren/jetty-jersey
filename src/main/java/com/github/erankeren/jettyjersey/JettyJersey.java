@@ -25,6 +25,7 @@ public class JettyJersey {
                 .build();
 
         resourceConfig = new MyResourceConfig();
+        resourceConfig.register(MyObjectMapperProvider.class);
     }
 
     public ResourceConfig getResourceConfig() {
