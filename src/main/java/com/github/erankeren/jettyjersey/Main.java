@@ -12,7 +12,8 @@ public class Main
 
     public static void main( String[] args ) throws Exception {
 
-        JettyJersey jettyJersey = new JettyJersey(port);
+        JettyJersey jettyJersey = new JettyJersey(port, new MyResourceConfig() {
+        });
 
         //bind/inject goes here
         jettyJersey.getResourceConfig().register(new AbstractBinder() {

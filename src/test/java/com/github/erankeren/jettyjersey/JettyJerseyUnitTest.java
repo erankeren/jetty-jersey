@@ -1,6 +1,5 @@
 package com.github.erankeren.jettyjersey;
 
-import com.github.erankeren.jettyjersey.JettyJersey;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
@@ -16,7 +15,8 @@ public class JettyJerseyUnitTest {
 
     @BeforeClass
     public static void before() throws Exception {
-        jettyJersey = new JettyJersey(9998);
+        jettyJersey = new JettyJersey(9998, new MyResourceConfig() {
+        });
 
         jettyJersey.start();
     }
