@@ -4,7 +4,7 @@
     <groupId>com.github.erankeren</groupId>
     <artifactId>jetty-jersey</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.15</version>
+    <version>1.0.16-SNAPSHOT</version>
     <name>jetty-jersey</name>
     <url>https://github.com/erankeren/jetty-jersey</url>
 
@@ -29,7 +29,7 @@
         <developerConnection>
             scm:git:ssh://git@github.com/erankeren/jetty-jersey.git
         </developerConnection>
-        <tag>1.0.15</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <!-- Issue management -->
