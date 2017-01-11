@@ -16,16 +16,18 @@ public class JettyJersey {
 
     URI baseUri;
 
-    public JettyJersey(Integer port) {
+
+    public JettyJersey(Integer port, MyResourceConfig resourceConfig) {
         Args.notNegative(port, "port");
+        Args.notNull(resourceConfig, "resourceConfig");
 
         baseUri = UriBuilder
                 .fromUri("http://localhost/")
                 .port(port)
                 .build();
 
-        resourceConfig = new MyResourceConfig();
-        resourceConfig.register(MyObjectMapperProvider.class);
+        this.resourceConfig = resourceConfig;
+        this.resourceConfig.register(MyObjectMapperProvider.class);
     }
 
     public ResourceConfig getResourceConfig() {
