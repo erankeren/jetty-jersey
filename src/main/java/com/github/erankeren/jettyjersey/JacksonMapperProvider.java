@@ -11,11 +11,11 @@ import javax.ws.rs.ext.Provider;
  */
 
 @Provider
-public class MyObjectMapperProvider implements ContextResolver<ObjectMapper> {
+public class JacksonMapperProvider implements ContextResolver<ObjectMapper> {
 
     final ObjectMapper defaultObjectMapper;
 
-    public MyObjectMapperProvider() {
+    public JacksonMapperProvider() {
         defaultObjectMapper = createDefaultMapper();
     }
 

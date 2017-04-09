@@ -3,6 +3,7 @@ package com.github.erankeren.jettyjersey;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 
@@ -15,8 +16,14 @@ public class JettyJerseyUnitTest {
 
     @BeforeClass
     public static void before() throws Exception {
-        jettyJersey = new JettyJersey(9998, new MyResourceConfig() {
-        });
+        jettyJersey = JettyJersey.newLocalhostInstance(
+                9998,
+                "com.github.erankeren",
+                new AbstractBinder() {
+                    @Override
+                    protected void configure() {
+                    }
+                });
 
         jettyJersey.start();
     }
